@@ -110,6 +110,66 @@ body {
     .nav-links a {
         font-size: 13px;
     }
+    .apps-page {
+    min-height: calc(100vh - 64px);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 40px 16px;
+}
+
+.app-card {
+    width: 100%;
+    max-width: 420px;
+
+    background: var(--navbar-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+
+    padding: 28px;
+
+    text-align: center;
+}
+
+.app-logo {
+    width: 80px;
+    height: 80px;
+
+    display: block;
+    margin: 0 auto 16px auto;
+}
+
+.app-version {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.app-platform {
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.download-button {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background: var(--fg);
+    color: var(--bg);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+.download-button:hover {
+    opacity: 0.9;
+}
 
     .page-placeholder h1 {
         font-size: 42px;
