@@ -175,3 +175,88 @@ body {
         font-size: 42px;
     }
 }
+.exchange-page {
+    min-height: calc(100vh - 64px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+}
+
+.exchange-form {
+    width: 100%;
+    max-width: 420px;
+
+    background: var(--navbar-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.exchange-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.exchange-form input {
+    padding: 12px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    background: var(--bg);
+    color: var(--fg);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn {
+    flex: 1;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.primary-btn {
+    border: none;
+
+    background: var(--fg);
+    color: var(--bg);
+}
+
+.secondary-btn {
+    background: transparent;
+
+    color: var(--fg);
+
+    border: 1px solid var(--border-color);
+}
+
+.error-message {
+    display: none;
+
+    text-align: center;
+
+    color: #d32f2f;
+
+    font-size: 14px;
+}
+
+.error-message.show {
+    display: block;
+}
